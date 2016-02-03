@@ -53,6 +53,31 @@
                         "runOrder": 1
                     }
                 ]
+            },
+            {
+                "name": "Production", 
+                "actions": [
+                    {
+                        "inputArtifacts": [
+                            {
+                                "name": "MyApp"
+                            }
+                        ], 
+                        "name": "Deploy-Second-Deployment", 
+                        "actionTypeId": {
+                            "category": "Deploy", 
+                            "owner": "AWS", 
+                            "version": "1", 
+                            "provider": "CodeDeploy"
+                        }, 
+                        "outputArtifacts": [], 
+                        "configuration": {
+                            "ApplicationName": "CodePipelineDemoApplication", 
+                            "DeploymentGroupName": "CodePipelineProductionFleet"
+                        }, 
+                        "runOrder": 1
+                    }
+                ]
             }
         ], 
         "artifactStore": {
