@@ -63,7 +63,7 @@
                                 "name": "MyApp"
                             }
                         ], 
-                        "name": "Deploy-Second-Deployment", 
+                        "name": "Deploy-Second-Deployment-prod", 
                         "actionTypeId": {
                             "category": "Deploy", 
                             "owner": "AWS", 
