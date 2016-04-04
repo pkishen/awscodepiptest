@@ -17,23 +17,23 @@ workflow Get-FortinetLicense
     param (
     [Parameter(Mandatory=$true)]
     [string] 
-    $Tdid
+    $Tdid,
     
     [Parameter(Mandatory=$true)]
     [string] 
-    $accountName
+    $accountName,
     
     [Parameter(Mandatory=$true)]
     [string] 
-    $variableName
+    $variableName,
     
     [Parameter(Mandatory=$true)]
     [string] 
-    $ISVName
+    $ISVName,
     
     [Parameter(Mandatory=$true)]
     [string] 
-    $credentialName
+    $credentialName,
     
     [Parameter(Mandatory=$true)]
     [string] 
