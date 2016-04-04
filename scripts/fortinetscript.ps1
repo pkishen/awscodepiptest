@@ -51,7 +51,7 @@ workflow Get-FortinetLicense
     }
 
     #Connect to your Azure Account
-    Add-AzureAccount -Credential $Cred
+    #Add-AzureAccount -Credential $Cred
     Add-AzureRmAccount -Credential $Cred
 	
 	
