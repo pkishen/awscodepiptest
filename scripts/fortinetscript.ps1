@@ -69,7 +69,8 @@ workflow Get-FortinetLicense
     testdriveid=$Tdid
 }
 $json = $fnbody | ConvertTo-Json
-$response = Invoke-RestMethod 'https://sxmguodehi.execute-api.us-west-2.amazonaws.com/prod/licenseManager?apikey=cmwPU5D5T2aJWaGjtVlon7VqSghAkl6C1oOfrhxB' -Method Put -Headers $headers -Body $json -ContentType 'application/json'
+$invokeUrl = 'https://sxmguodehi.execute-api.us-west-2.amazonaws.com/prod/licenseManager/'+ $Tdid +'/reserveLicense?apikey=cmwPU5D5T2aJWaGjtVlon7VqSghAkl6C1oOfrhxB'
+$response = Invoke-RestMethod $invokeUrl -Method Put -Headers $headers -Body $json -ContentType 'application/json'
 	
    # $blobURL ='https://fortinetkeys.blob.core.windows.net/licensefiles/arm_template-3.json.zip?st=2016-03-29T03%3A44%3A25Z&se=2016-03-29T07%3A04%3A25Z&sp=r&sv=2015-04-05&sr=b&sig=8qXrBQF0AWcXU6XXOwjCvQhiycy4mqvMmrZhYLdaW4k%3D'
     
