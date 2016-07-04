@@ -2,4 +2,4 @@
 
 git clone https://github.com/sysgain/km-docker-nodejs.git
 cd km-docker-nodejs
-sudo docker-compose up
+COMPOSE_HTTP_TIMEOUT=240 sudo docker-compose up
