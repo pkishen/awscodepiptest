@@ -1,9 +1,9 @@
 #!/bin/bash
-#keyName=$1
-#componentBaseUrl=$2
-#nodename=$3 
-#hostname=$4
-#vmUserName=$5
+keyName=$1
+componentBaseUrl=$2
+nodename=$3 
+hostname=$4
+vmUserName=$5
 #complianceadminusername=$6
 #env=$7
 #component=$8
